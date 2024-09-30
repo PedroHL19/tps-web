@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício de Mudança de Cores</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria Auto Cuidado</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="titulo">Bem-vindo ao Exercício de mudança de Cores!</h1>
-    <p>Escolha uma cor do menu abaixo para mudar a cor do texto desta página.</p>
+  <h1>Cafeteria Auto Cuidado</h1>
+  
+  <p>Escolha sua bebida:</p>
+  <input type="radio" id="cafePuro" name="bebida" value="cafePuro">
+  <label for="cafePuro">Café Puro</label>
 
-    <label for="seletorCor">Selecione uma cor:</label>
-    <select id="seletorCor" onchange="mudarCor()">
-        <option value="">Escolha uma cor</option>
-        <option value="red">Vermelho</option>
-        <option value="green">Verde</option>
-        <option value="blue">Azul</option>
-        <option value="yellow">Amarelo</option>
-        <option value="purple">Roxo</option>
-    </select>
+  <input type="radio" id="cafeLeite" name="bebida" value="cafeLeite">
+  <label for="cafeLeite">Café com Leite</label>
 
-    <script src="scripts.js"></script>
+  <input type="radio" id="chocolate" name="bebida" value="chocolate">
+  <label for="chocolate">Chocolate</label>
+  
+  <div id="torraSection">
+    <p>Torra do Café:</p>
+    <input type="radio" id="leve" name="torra" value="leve">
+    <label for="leve">Leve</label>
+
+    <input type="radio" id="media" name="torra" value="media">
+    <label for="media">Média</label>
+
+    <input type="radio" id="forte" name="torra" value="forte">
+    <label for="forte">Forte</label>
+  </div>
+
+  <p>Acompanhamentos:</p>
+  <input type="checkbox" id="chantilly" name="acompanhamento" value="chantilly">
+  <label for="chantilly">Chantilly</label>
+
+  <input type="checkbox" id="raspasChocolate" name="acompanhamento" value="raspasChocolate">
+  <label for="raspasChocolate">Raspas de Chocolate</label>
+
+  <input type="checkbox" id="ovomaltine" name="acompanhamento" value="ovomaltine">
+  <label for="ovomaltine">Ovomaltine</label>
+
+  <button id="fazerPedido">Fazer Pedido</button>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
