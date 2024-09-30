@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exer 2 - Fale Conosco</title>
+    <title>Exercício de Mudança de Cores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Fale Conosco</h2>
-        <p>Você tem alguma dúvida, sugestão ou crítica? Envie para nós!</p>
-        <hr>
-        <form onsubmit="mostrarPopup(event)">
-            <div class="form-group">
-                <label for="nome">NOME</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-MAIL</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="comentarios">COMENTÁRIOS</label>
-                <textarea id="comentarios" name="comentarios" required></textarea>
-            </div>
-            <div class="buttons">
-                <button type="submit" class="btn-submit">Enviar</button>
-                <button type="reset" class="btn-reset">Limpar</button>
-            </div>
-        </form>
-    </div>
+    <h1 id="titulo">Bem-vindo ao Exercício de mudança de Cores!</h1>
+    <p>Escolha uma cor do menu abaixo para mudar a cor do texto desta página.</p>
+
+    <label for="seletorCor">Selecione uma cor:</label>
+    <select id="seletorCor" onchange="mudarCor()">
+        <option value="">Escolha uma cor</option>
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+        <option value="purple">Roxo</option>
+    </select>
+
     <script src="scripts.js"></script>
 </body>
 </html>
