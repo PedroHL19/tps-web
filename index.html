@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 1 - Sistema Meu IFMG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 24px;
+        }
+
+        .container p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            width: 45%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-enter {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        .btn-clear {
+            background: #555;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sistema Meu IFMG</h2>
+        <p>Entre com os dados para acessar o sistema.</p>
+        <form onsubmit="mostrarPopup(event)">
+            <div class="form-group">
+                <label for="usuario">Usuário (seu e-mail)</label><br>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label><br>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn-enter">Entrar</button>
+                <button type="reset" class="btn-clear">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function mostrarPopup(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            alert("As informações foram recebidas com sucesso!");
+        }
+    </script>
+</body>
+</html>
