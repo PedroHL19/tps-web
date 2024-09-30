@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exer 1 - Sistema Meu IFMG</title>
+    <title>Exer 2 - Fale Conosco</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Sistema Meu IFMG</h2>
-        <p>Entre com os dados para acessar o sistema.</p>
+        <h2>Fale Conosco</h2>
+        <p>Você tem alguma dúvida, sugestão ou crítica? Envie para nós!</p>
+        <hr>
         <form onsubmit="mostrarPopup(event)">
             <div class="form-group">
-                <label for="usuario">Usuário (seu e-mail)</label><br>
-                <input type="text" id="usuario" name="usuario" required>
+                <label for="nome">NOME</label>
+                <input type="text" id="nome" name="nome" required>
             </div>
             <div class="form-group">
-                <label for="senha">Senha</label><br>
-                <input type="password" id="senha" name="senha" required>
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">COMENTÁRIOS</label>
+                <textarea id="comentarios" name="comentarios" required></textarea>
             </div>
             <div class="buttons">
-                <button type="submit" class="btn-enter">Entrar</button>
-                <button type="reset" class="btn-clear">Limpar</button>
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="reset" class="btn-reset">Limpar</button>
             </div>
         </form>
     </div>
