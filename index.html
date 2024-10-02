@@ -3,45 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafeteria Auto Cuidado</title>
+  <title>Cafeteria do Cruzeiro</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Cafeteria Auto Cuidado</h1>
-  
-  <p>Escolha sua bebida:</p>
-  <input type="radio" id="cafePuro" name="bebida" value="cafePuro">
-  <label for="cafePuro">Café Puro</label>
+  <div class="container">
+    <h1>Cafeteria do Cruzeiro</h1>
+    
+    <p>Escolha sua bebida:</p>
+    <input type="radio" id="cafePuro" name="bebida" value="cafePuro">
+    <label for="cafePuro">Café Puro</label>
 
-  <input type="radio" id="cafeLeite" name="bebida" value="cafeLeite">
-  <label for="cafeLeite">Café com Leite</label>
+    <input type="radio" id="cafeLeite" name="bebida" value="cafeLeite">
+    <label for="cafeLeite">Café com Leite</label>
 
-  <input type="radio" id="chocolate" name="bebida" value="chocolate">
-  <label for="chocolate">Chocolate</label>
-  
-  <div id="torraSection">
-    <p>Torra do Café:</p>
-    <input type="radio" id="leve" name="torra" value="leve">
-    <label for="leve">Leve</label>
+    <input type="radio" id="chocolate" name="bebida" value="chocolate">
+    <label for="chocolate">Chocolate</label>
+    
+    <div id="torraSection">
+      <p>Torra do Café:</p>
+      <input type="radio" id="leve" name="torra" value="leve">
+      <label for="leve">Leve</label>
 
-    <input type="radio" id="media" name="torra" value="media">
-    <label for="media">Média</label>
+      <input type="radio" id="media" name="torra" value="media">
+      <label for="media">Média</label>
 
-    <input type="radio" id="forte" name="torra" value="forte">
-    <label for="forte">Forte</label>
+      <input type="radio" id="forte" name="torra" value="forte">
+      <label for="forte">Forte</label>
+    </div>
+
+    <p>Acompanhamentos:</p>
+    <div id="acompanhamentos">
+      <div>
+        <input type="checkbox" id="chantilly" name="acompanhamento" value="chantilly">
+        <label for="chantilly">Chantilly</label>
+      </div>
+      <div>
+        <input type="checkbox" id="raspasChocolate" name="acompanhamento" value="raspasChocolate">
+        <label for="raspasChocolate">Raspas de Chocolate</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ovomaltine" name="acompanhamento" value="ovomaltine">
+        <label for="ovomaltine">Ovomaltine</label>
+      </div>
+    </div>
+
+    <button id="fazerPedido">Fazer Pedido</button>
   </div>
 
-  <p>Acompanhamentos:</p>
-  <input type="checkbox" id="chantilly" name="acompanhamento" value="chantilly">
-  <label for="chantilly">Chantilly</label>
-
-  <input type="checkbox" id="raspasChocolate" name="acompanhamento" value="raspasChocolate">
-  <label for="raspasChocolate">Raspas de Chocolate</label>
-
-  <input type="checkbox" id="ovomaltine" name="acompanhamento" value="ovomaltine">
-  <label for="ovomaltine">Ovomaltine</label>
-
-  <button id="fazerPedido">Fazer Pedido</button>
+  <img src="escudo.png" alt="Cruzeiro Logo" class="logo">
   
   <script src="scripts.js"></script>
 </body>
