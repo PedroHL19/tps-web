@@ -1,4 +1,4 @@
-// Seleciona os elementos
+
 const bebidaChocolate = document.getElementById('chocolate');
 const torraSection = document.getElementById('torraSection');
 const btnFazerPedido = document.getElementById('fazerPedido');
