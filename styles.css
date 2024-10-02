@@ -1,5 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; /* Para garantir que o conteúdo fique alinhado à esquerda */
+    align-items: flex-start; /* Alinha o conteúdo ao topo da página */
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -53,4 +58,14 @@ button {
 
 button:hover {
     opacity: 0.9;
+}
+
+/* Estilo para a barra verde */
+.barra-verde {
+    background-color: #7ED321; /* Cor verde */
+    width: 30px;
+    height: 100vh; /* Altura da barra ocupando toda a tela */
+    position: fixed;
+    right: 0;
+    top: 0;
 }
