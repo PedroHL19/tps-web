@@ -60,11 +60,10 @@ button:hover {
     opacity: 0.9;
 }
 
-/* Estilo para a barra verde */
-.barra-verde {
-    background-color: #7ED321; /* Cor verde */
+.verdao {
+    background-color: #7ED321; 
     width: 30px;
-    height: 100vh; /* Altura da barra ocupando toda a tela */
+    height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
