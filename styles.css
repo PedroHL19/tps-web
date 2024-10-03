@@ -1,117 +1,89 @@
-/* Estilo geral da página */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0033A0; /* Azul escuro do Cruzeiro */
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
 
-/* Centralizar o Todo List */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; 
+  margin: 0;
+  padding: 0;
+  color: #0b3d91; 
+
 .container {
-  background-color: #FFFFFF; /* Fundo branco */
-  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 350px;
-  text-align: center;
-  color: #0033A0; /* Texto na cor azul escuro */
 }
 
 h1 {
+  text-align: center;
+  color: #0b3d91; 
   margin-bottom: 20px;
 }
 
-/* Input de nova tarefa e botão de salvar */
-.new-task {
+.input-section {
   margin-bottom: 20px;
 }
 
-.new-task input {
-  padding: 10px;
-  width: 65%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-}
-
-.new-task button {
-  padding: 10px;
-  width: 30%;
-  background-color: #0033A0;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px; /* Adiciona margem superior para afastar o botão do input */
-}
-
-.new-task button:hover {
-  background-color: #0056b3; /* Azul mais claro no hover */
-}
-
-/* Estilo dos filtros */
-.filters {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center; /* Centraliza os botões horizontalmente */
-  gap: 10px; /* Espaçamento uniforme entre os botões */
-}
-
-.filters button {
-  padding: 8px 12px;
-  background-color: #0056b3;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100px; /* Largura fixa para os botões */
-}
-
-.filters button:hover {
-  background-color: #0033A0;
-}
-
-/* Lista de tarefas */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 10px;
-  background-color: #F0F0F0; /* Fundo claro para as tarefas */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 8px;
-  color: #0033A0;
+  border: 1px solid #87cefa; 
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-li.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-
-li button {
-  background-color: red;
-  border: none;
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b3d91; 
   color: white;
-  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-li .delete-btn {
-  margin-left: 10px;
+button:hover {
+  background-color: #4169e1; 
 }
 
-/* Resumo de tarefas */
-#task-summary {
-  margin-top: 20px;
-  font-size: 14px;
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #87cefa;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.note-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.note {
+  background-color: #e6f2ff; 
+  border: 1px solid #87cefa; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+.note h3 {
+  margin: 0;
+  color: #0b3d91; 
+}
+
+.note p {
+  color: #333;
+}
 }

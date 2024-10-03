@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <title>Aplicativo de Notas - Gugâ Quípe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Todo List</h1>
-        <div class="new-task">
-            <input type="text" id="task-input" placeholder="Nova tarefa...">
-            <button id="add-task-btn">Salvar</button>
+        <h1>Gugâ Quípe - Aplicativo de Notas</h1>
+        
+        <div class="input-section">
+            <input type="text" id="note-title" placeholder="Título">
+            <textarea id="note-content" rows="3" placeholder="Conteúdo"></textarea>
+            <button onclick="addNote()">Adicionar Nota</button>
         </div>
-        <div class="filters">
-            <button data-filter="all">Todos</button>
-            <button data-filter="pending">Não Concluídos</button>
-            <button data-filter="completed">Concluídos</button>
+
+        <input type="text" id="search" class="search-bar" placeholder="Pesquisar notas..." oninput="filterNotes()">
+
+        <div class="note-container" id="notes">
         </div>
-        <ul id="task-list"></ul>
-        <div id="task-summary">TOTAL: <span id="completed-count">0</span> de <span id="total-count">0</span> concluídos</div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
