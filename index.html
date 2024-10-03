@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example with Text and Button</title>
-    <link rel="stylesheet" href="styles.css"> g
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p id="secao">The Buried City</p>
-    <h1>The quick brown fox jumps over the lazy dog.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Donec dolor nisi</a>, posuere vitae tincidunt et, molestie sit amet purus. Pellentesque consectetur tortor a <br>fermentum blandit. Sed scelerisque id est non vulputate.</p>
-    <p>
-      <button>Primary button</button>
-    </p>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="new-task">
+            <input type="text" id="task-input" placeholder="Nova tarefa...">
+            <button id="add-task-btn">Salvar</button>
+        </div>
+        <div class="filters">
+            <button data-filter="all">Todos</button>
+            <button data-filter="pending">Não Concluídos</button>
+            <button data-filter="completed">Concluídos</button>
+        </div>
+        <ul id="task-list"></ul>
+        <div id="task-summary">TOTAL: <span id="completed-count">0</span> de <span id="total-count">0</span> concluídos</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

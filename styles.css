@@ -1,75 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-  
+/* Estilo geral da página */
 body {
-  width: 500px;
-  background-color: #18071B;
+  font-family: Arial, sans-serif;
+  background-color: #0033A0; /* Azul escuro do Cruzeiro */
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-h1 {
-  margin-left: 10px;
-  color: #FFFFFF;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 2.85em;
-  display: inline-block;
-  text-align: left;
-  font-optical-sizing: auto;
-}
-p {
-  color: #FFFFFF;
-  text-align: justify;
-  margin-top: 20px;
-  margin-left: 100px;
-  line-height: 1.5;
-  font-family: "Vollkorn", serif;
-  font-weight: 400;
-  font-size: 1em;
-  font-optical-sizing: auto;
-}
-a {
-  color: #FFFFFF;
-  display: inline-block;
-  text-decoration: none;
-}
-a::after {
-  content: '';
-  display: block;
-  background-color: #FFDA53;
-  height: 1px;
-  width: 100%;
-}
-button {
-  cursor: pointer;
-  margin-top: 40px;
-  background-color: #FFDA53;
-  border: 0;
-  padding: 12px;
-  color: #2F2032;
-  text-transform: uppercase;
-  letter-spacing: 0.11em;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 800;
-  font-size: 0.8em;
+
+/* Centralizar o Todo List */
+.container {
+  background-color: #FFFFFF; /* Fundo branco */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
   text-align: center;
+  color: #0033A0; /* Texto na cor azul escuro */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Input de nova tarefa e botão de salvar */
+.new-task {
+  margin-bottom: 20px;
+}
+
+.new-task input {
+  padding: 10px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.new-task button {
+  padding: 10px;
+  width: 30%;
+  background-color: #0033A0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px; /* Adiciona margem superior para afastar o botão do input */
+}
+
+.new-task button:hover {
+  background-color: #0056b3; /* Azul mais claro no hover */
+}
+
+/* Estilo dos filtros */
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 10px; /* Espaçamento uniforme entre os botões */
+}
+
+.filters button {
+  padding: 8px 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100px; /* Largura fixa para os botões */
+}
+
+.filters button:hover {
+  background-color: #0033A0;
+}
+
+/* Lista de tarefas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #F0F0F0; /* Fundo claro para as tarefas */
+  margin-bottom: 10px;
+  display: flex;
   align-items: center;
-  font-optical-sizing: auto;
+  justify-content: space-between;
+  border-radius: 8px;
+  color: #0033A0;
 }
-#secao {
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+li .delete-btn {
   margin-left: 10px;
-  color: #FFDA53;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 0.9em;
-  font-optical-sizing: auto;
 }
-h1::after {
-  content: '';
-  display: block;
-  background-color: #FFFFFF;
-  margin-top: 10px;
-  height: 4px;
+
+/* Resumo de tarefas */
+#task-summary {
+  margin-top: 20px;
+  font-size: 14px;
 }
